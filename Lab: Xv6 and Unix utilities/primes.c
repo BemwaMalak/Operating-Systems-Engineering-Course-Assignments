@@ -30,7 +30,7 @@ void right(int read_d){
     	
     	if(fork()){
     	    close(cull_pipe[1]);
-    	    // Calling right again but with the the new pipe read side
+    	    // Calling right again but with the new pipe read side
     	    right(cull_pipe[0]);
     	}else{
     	    close(cull_pipe[0]);
